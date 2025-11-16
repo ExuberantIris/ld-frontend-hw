@@ -41,3 +41,32 @@ Fetch the content of the following URLs asynchronously and save them locally in 
 
 - Simple example: `editor-blender/client/__init__.py`
 - Complicated example: `editor-blender/operators/async_core/__init__.py`.   
+
+## HW2
+#### Goal
+Learn how to use async for loops and websockets to interact with websocket servers.
+
+#### Tutorials
+[Websockets](https://superfastpython.com/asyncio-websocket-clients/#websockets_Client_Library) ("websockets Client Library" section)
+
+[Iterables and Generators](https://myapollo.com.tw/blog/python-iterable-iterator-generator/) (Optional)
+
+[Async for Loops in Python](https://youtu.be/dEZKySL3M9c?si=VJC-iKiG2mtWbpww) (Optional)
+
+
+
+#### Requirements
+Before doing anything, update the dependencies with `uv sync`.
+
+Start the server in `HW2/server.py` with 
+```
+uv run HW2/server.py
+```
+and complete the TODO in `HW2/client.py`, run it with 
+```
+uv run HW2/client.py
+```
+
+#### Examples in lightdance editor
+We use async for loops to handle GraphQL subscriptions.
+- `editor-blender/client/__init__.py`:  `Clients.subscribe()`
